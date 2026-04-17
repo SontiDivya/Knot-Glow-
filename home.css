@@ -26,12 +26,16 @@ body {
   width: 100%;
   max-width: 180px;
   text-align: center;
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
 }
 
 /* IMAGE */
 .product img {
   width: 100%;
   height: 160px;
+  
   object-fit: cover;
   border-radius: 15px;
 }
@@ -188,4 +192,19 @@ html {
   padding: 5px 12px;
   font-size: 18px;
   cursor: pointer;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .container {
+    padding: 10px;
+  }
 }

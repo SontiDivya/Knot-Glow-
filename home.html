@@ -19,6 +19,11 @@
 <button onclick="showCategory('large')">Large Bows</button>
 <button onclick="showCategory('mini')">Mini Bows</button>
 </div>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
 <!-- SCRUNCHY-->
  <div id="scrunchy" class="category" style="display:none;">
     <div class="product">
@@ -636,8 +641,10 @@
 
 
 <!-- IMAGE POPUP -->
-<div id="image-popup" class="popup" onclick="closePopup()">
-    <img id="popup-img">
+
+<div id="image-popup" class="popup">
+    <span class="close-btn" onclick="closeImagePopup()">❌</span>
+    <img id="popup-img" onclick="closeImagePopup()">
 </div>
 <div id="cart"></div>
 

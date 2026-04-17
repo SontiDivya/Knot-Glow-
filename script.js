@@ -141,3 +141,24 @@ function confirmBuy() {
 
   closeBuyPopup();
 }
+
+// IMAGE POPUP (WORKS WITH YOUR HTML)
+
+function openPopup(src) {
+  const popup = document.getElementById("image-popup");
+  const img = document.getElementById("popup-img");
+
+  img.src = src;
+  popup.style.display = "flex";
+}
+
+// close when clicking background
+document.getElementById("image-popup").addEventListener("click", function(e) {
+  if (e.target.id === "image-popup") {
+    closeImagePopup();
+  }
+});
+
+function closeImagePopup() {
+  document.getElementById("image-popup").style.display = "none";
+}

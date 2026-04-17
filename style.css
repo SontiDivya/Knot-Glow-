@@ -6,7 +6,8 @@ body {
 
 /* FULL IMAGE */
 .hero {
-  
+  background-size: cover;
+  background-position: center;
    height: 100vh;
   background: linear-gradient(
       rgba(0,0,0,0.4),
@@ -41,7 +42,31 @@ body {
   transition: 0.3s;
 }
 
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
 .bottom-content button:hover {
   background: deeppink;
   transform: scale(1.08);
+}
+
+
+@media (max-width: 600px) {
+  .hero-content {
+    left: 5%;
+    right: 5%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 16px;
+  }
 }

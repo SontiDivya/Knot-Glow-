@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+/* FULL IMAGE */
+.hero {
+  
+   height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+  ),
+  url("images/home.png"); /* your generated image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+
+/* BUTTON BELOW IMAGE */
+.bottom-content {
+  text-align: center;
+  position: absolute;
+  top: 90%;   /* 👈 move button down */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+/* BUTTON STYLE */
+.bottom-content button {
+  padding: 14px 30px;
+  font-size: 16px;
+  background: rgb(236, 103, 125);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottom-content button:hover {
+  background: deeppink;
+  transform: scale(1.08);
+}
